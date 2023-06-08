@@ -86,8 +86,24 @@ h1 {
 
 
 
+.benefits{
+    display: flex;
+    flex-direction: column;
 
+    text-align: center;
 
+    padding: 1.5rem;
+}
+.benefits-item{
+    padding-top: 5rem;
+}
+.benefits-item p{
+    line-height: 1.5rem;
+}
+h2 {
+    padding: 2rem 0 1rem;
+    font-size: 1.25rem;
+}
 
 footer{
     background-color: hsl(216, 53%, 9%);

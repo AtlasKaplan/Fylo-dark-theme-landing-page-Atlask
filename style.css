@@ -121,6 +121,7 @@ h2 {
 h3 {
     padding: 1rem;
     font-size: 1.25rem;
+    margin-right: 0;
 }
 .stay-productive {
     text-align: start;

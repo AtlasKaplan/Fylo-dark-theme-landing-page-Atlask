@@ -12,7 +12,7 @@
         font-size: 16px;
     }
     main{
-        max-width: 1440px;
+        max-width: 108rem;
     }
     .benefits{
         display: grid;
@@ -58,14 +58,82 @@
         margin-left: 1.75rem;
     }
     h3{
-        font-size: 1.75rem;
-        margin-right: 300px;
+        font-size: 2.5rem;
+        
         line-height: 2.5rem;
     }
     .stay-productive-img{
-        width: 35%;
+        width: 450px;
     }
 
+    .testimonial{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 1rem;
+    }
+    .testimonial-card {
+        margin-top: 35px;
+        flex-basis: 350px;
+        z-index: 1;   
+    }
 
-    
+    .quotes{
+        position: relative;
+        top:155px;
+        left: 25%;
+        z-index: 0;
+        width: 5%;
+    }
+    .input-card{
+        max-width: 850px;
+        max-height: 175px;
+        margin: 0 auto;
+        top:10rem;
+        
+    }
+    h4{
+        font-size: 2rem;
+    }
+    .imput{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #email{
+        width: 35rem;
+    }
+    .footer-contact-us{
+        max-width: 108rem;
+    }
+    .contact-us{
+        display: flex;
+    }
+    .logo-footer{
+        width: 10%;
+        height: 10%;  
+    }
+    footer{
+        max-width: 108rem;
+    }
+}
+
+@media (min-width:870px){
+    .quotes{
+        left: 125px;
+    }
+}
+
+@media (min-width:1070px){
+    h3{
+        padding-right: 13rem;
+    }
+    .testimonial {
+    padding-inline: 1.75rem;
+}
+    .stay-productive-img {
+        width: 600px;
+}
+.quotes{
+    left: 8%;
+}
 }

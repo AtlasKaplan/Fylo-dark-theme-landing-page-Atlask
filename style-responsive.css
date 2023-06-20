@@ -105,12 +105,31 @@
     .footer-contact-us{
         max-width: 108rem;
     }
-    .contact-us{
-        display: flex;
+    
+    .contact-us {
+    display: grid;
+    grid-template-columns: 350px repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap:10px;
+    margin: 0 4rem;
     }
+    
     .logo-footer{
-        width: 10%;
-        height: 10%;  
+        width: 10rem;
+        height: 40px;
+        position: relative;
+        left: 5rem;
+        top: 2rem;
+    }
+    ul{
+        padding-top: 0;
+        
+    }
+    .logos{
+        padding-top: 1rem;
+        align-self: flex-start;
+        justify-content: flex-start;
     }
     footer{
         max-width: 108rem;
@@ -131,9 +150,18 @@
     padding-inline: 1.75rem;
 }
     .stay-productive-img {
-        width: 600px;
+        width: 500px;
 }
 .quotes{
     left: 8%;
 }
+}
+
+@media (max-width:926px) {
+    .grid2,.grid3,.grid4 {
+        justify-self: center;
+    }
+    .grid5{
+        justify-self: flex-end;
+    }
 }

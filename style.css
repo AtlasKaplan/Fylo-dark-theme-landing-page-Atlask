@@ -34,7 +34,6 @@ nav{
 }
 main {
     background-color: hsl(218, 28%, 13%);
-    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -231,12 +230,11 @@ h4{
     background-color: #8CDAE4;
 }
 .footer-contact-us{
-    max-width: 400px;
     margin: 0 auto;
     padding-top: 15rem;
 }
 .contact-us{
-    padding: 5rem 1.75rem;
+    padding: 3rem 1.75rem;
 }
 .location-img{
     padding-top: .50rem;
@@ -250,7 +248,8 @@ h4{
 }
 
 .logo-footer{
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-left: 1.75rem;
 }
 li{
     list-style: none;
@@ -278,7 +277,6 @@ ul {
 }
 footer{
     background-color: hsl(216, 53%, 9%);
-    max-width: 400px;
     margin: 0 auto;
 }
 .attribution{

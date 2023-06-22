@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid | Atlas K</title>
-
+  
 </head>
 <body>
 
@@ -133,11 +133,11 @@
       questions, our support team would be happy to help you.</p>
       
       
-        <div class="imput">
-          <input type="email" name="email" id="email" placeholder="email@example.com">
-          <button><b>Get Started For Free</b></button>
-        </div>
-      <p class="email-error">Please enter a valid email addres</p>
+      <form class="imput" novalidate>
+        <input type="email" name="email" class="email" id="email" placeholder="email@example.com" required>
+        <button type="submit" class="btn"><b>Get Started For Free</b></button>
+      </form>
+      <p class="email-error hide">Please enter a valid email address</p>
     </section>
 
   </main>
@@ -183,5 +183,6 @@
       Coded by <a href="#">Atlas Kaplan</a>.
     </p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

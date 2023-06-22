@@ -230,10 +230,11 @@ h4{
     padding-top: 1rem;
 }
 
-#email{
+.email{
     padding: 1rem;
     border-radius: 25px;
     border: none;
+    color: black;
 }
 .input-text{
     margin: 1rem 0;
@@ -253,8 +254,12 @@ h4{
     color: var(--error-email);
     align-self: center;
     margin-top: 0.5rem;
+    display: block;
 }
 
+.hide{
+    display: none;
+}
 /* ////////////////////////F O O T E R///////////////////////////// */
 .footer-contact-us{
     margin: 0 auto;

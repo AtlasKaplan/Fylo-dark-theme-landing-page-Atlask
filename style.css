@@ -10,14 +10,25 @@
     --font-mobile: 14px;
     --font-family-special:'Raleway', sans-serif;
     --font-family-normal:'Open Sans',sans-serif;
+
+    --main-bg:hsl(218, 28%, 13%);
+    --footer-bg:hsl(216, 53%, 9%);
+    --testimonial-card-bg:hsl(219, 30%, 18%);
+    --imput-bg:hsl(217, 28%, 15%);
+    --hover-bg:rgb(184, 228, 241);
+    --link-fylo:hsl(176, 68%, 64%);
+    --error-email:hsl(0, 100%, 63%);
 }
+
+
+/* ////////////////////////N A V///////////////////////////// */
 nav{
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
-    background-color: hsl(218, 28%, 13%);
+    background-color: var(--main-bg);
     max-width: 100rem;
     margin: 0 auto;
 }
@@ -29,11 +40,13 @@ nav{
     text-decoration: none;
 }
 .nav-links a:hover {
-    color: rgb(184, 228, 241);
+    color: var(--hover-bg);
     text-decoration: underline;
 }
+
+/* ////////////////////////M A I N///////////////////////////// */
 main {
-    background-color: hsl(218, 28%, 13%);
+    background-color: var(--main-bg);
     margin: 0 auto;
 }
 
@@ -87,7 +100,7 @@ h1 {
     
 }
 .hero-button:hover{
-    background-color: #8CDAE4;
+    background-color: var(--hover-bg);
     background-image: none;
 }
 
@@ -135,11 +148,14 @@ h3 {
 
 .link-fylo span{
     display: flex;
-    color: hsl(176, 68%, 64%);
+    color: var(--link-fylo);
     padding-bottom: 7px;
     width: 160px;
     border-bottom: 1px solid currentColor;
     cursor: pointer;
+}
+.link-fylo span:hover{
+    color: white;
 }
 
 .icon-arrow{
@@ -163,7 +179,7 @@ h3 {
 }
 
 .testimonial-card {
-    background-color: hsl(219, 30%, 18%);
+    background-color: var(--testimonial-card-bg);
     padding: 1rem;
     margin: 1.5rem;
 }
@@ -190,7 +206,7 @@ h3 {
 }
 
 .input-card {
-    background-color: #1B2330;
+    background-color: var(--imput-bg);
     text-align: center;
     padding: 4rem 1rem;
     margin-inline: 1.5rem;
@@ -198,13 +214,12 @@ h3 {
     border-radius: 7.5px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    
     position: relative;
     top: 15rem;
 }
 
 h4{ 
+    margin: 1rem 0;
     font-size: 1.25rem;
 }
 .imput{
@@ -219,16 +234,27 @@ h4{
     border-radius: 25px;
     border: none;
 }
+.input-text{
+    margin: 1rem 0;
+}
 .input-card button{
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: hsl(198, 60%, 50%);
     border-radius: 25px;
     border: none;
     cursor: pointer;
 }
 .input-card button:hover{
-    background-color: #8CDAE4;
+    background-color: var(--hover-bg);
 }
+
+.email-error{
+    color: var(--error-email);
+    align-self: center;
+    margin-top: 0.5rem;
+}
+
+/* ////////////////////////F O O T E R///////////////////////////// */
 .footer-contact-us{
     margin: 0 auto;
     padding-top: 15rem;
@@ -257,7 +283,7 @@ li{
     cursor: pointer;
 }
 li:hover{
-    color: rgb(184, 228, 241);
+    color: var(--btn-hover-bg);
     text-decoration: underline;
 }
 ul {
@@ -276,7 +302,7 @@ ul {
     padding-top: 5rem;
 }
 footer{
-    background-color: hsl(216, 53%, 9%);
+    background-color: var(--footer-bg);
     margin: 0 auto;
 }
 .attribution{

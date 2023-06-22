@@ -4,6 +4,7 @@
     color: white;
     font-family: var(--font-family-normal);
     font-size: var(--font-mobile);
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -238,8 +239,8 @@ h4{
     margin: 1rem 0;
 }
 .input-card button{
-    padding: 1rem 2rem;
     background-color: hsl(198, 60%, 50%);
+    padding: 1rem 1.25rem;
     border-radius: 25px;
     border: none;
     cursor: pointer;
